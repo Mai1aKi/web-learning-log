@@ -1,0 +1,42 @@
+/* src/CalculatorUI.css */
+.calculator {
+    width: 250px;
+    margin: 30px auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #ddd;
+  }
+  
+  .screen {
+    background: #222;
+    color: #0f0;
+    font-size: 24px;
+    padding: 10px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .button-row {
+    display: flex;
+  }
+  
+  .button-row button {
+    flex: 1;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .button-row button:hover {
+    background: #eee;
+  }
