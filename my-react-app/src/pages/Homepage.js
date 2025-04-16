@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import moment from 'moment-timezone';
+import './Homepage.css';
 
 function Homepage() {
   const [countdown, setCountdown] = useState('');
@@ -20,14 +21,12 @@ function Homepage() {
   }, []);
 
   return (
-    <div style={{ textAlign: 'left', paddingLeft: '20px' }}>
-      <h1>Welcome!</h1>
-      <p>New York Countdown to 2025/4/18 {countdown}</p>
-      <Link
-        to="/calculator"
-        style={{ fontSize: '18px', color: 'blue', textDecoration: 'underline' }}
-      >
-        Go to Calculator
+    <div className="homepage-container" style={{ textAlign: 'left', padding: '20px' }}>
+      <h1 className="homepage-title">Welcome!</h1>
+      <p className="homepage-subtitle"> to be continued...</p>
+      <p className="countdown-box">New York Countdown to 2025/4/18: {countdown}</p>
+      <Link to="/calculator" className="homepage-link">
+        → Start Calculator
       </Link>
     </div>
   );
